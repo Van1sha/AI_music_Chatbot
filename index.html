@@ -368,7 +368,7 @@
             chatHistory.push({ role: 'user', parts: [{ text: prompt }] });
     
             try {
-                const response = await axios.post('http://localhost:3000/chat', {
+                const response = await axios.post('https://ai-music-mashup-project.onrender.com//chat', {
                     message: prompt
                 }, {
                     headers: { 'Content-Type': 'application/json' }
