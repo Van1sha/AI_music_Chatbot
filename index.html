@@ -480,7 +480,7 @@
         window.onload = async () => {
             initializeYouTubeAPI();
             try {
-                const response = await axios.get('http://localhost:3000/');
+                const response = await axios.get('https://ai-music-mashup-project.onrender.com');
                 setTimeout(() => addChatMessage('assistant', 'Search for songs and create a mashup!'), 1000);
             } catch (err) {
                 addChatMessage('assistant', 'Warning: Could not connect to backend server. Some features may not work.');
