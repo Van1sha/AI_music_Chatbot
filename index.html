@@ -483,7 +483,7 @@
                 const response = await axios.get('https://ai-music-mashup-project.onrender.com/chat');
                 setTimeout(() => addChatMessage('assistant', 'Search for songs and create a mashup!'), 1000);
             } catch (err) {
-                addChatMessage('assistant', 'Warning: Could not connect to backend server. Some features may not work.');
+                addChatMessage('assistant', '');
             }
         };
     </script>
