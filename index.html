@@ -477,15 +477,15 @@
         elements.downloadMashupBtn.addEventListener('click', downloadMashup);
     
         // Initialize app
-        // window.onload = async () => {
-        //     initializeYouTubeAPI();
-        //     try {
-        //         const response = await axios.get('http://localhost:3000/');
-        //         setTimeout(() => addChatMessage('assistant', 'Search for songs and create a mashup!'), 1000);
-        //     } catch (err) {
-        //         addChatMessage('assistant', 'Warning: Could not connect to backend server. Some features may not work.');
-        //     }
-        // };
+        window.onload = async () => {
+            initializeYouTubeAPI();
+            try {
+                const response = await axios.get('http://localhost:3000/');
+                setTimeout(() => addChatMessage('assistant', 'Search for songs and create a mashup!'), 1000);
+            } catch (err) {
+                addChatMessage('assistant', 'Warning: Could not connect to backend server. Some features may not work.');
+            }
+        };
     </script>
     
 
